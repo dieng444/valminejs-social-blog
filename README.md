@@ -1,2 +1,2 @@
 # valmine.js
-Framewok MVC for node.js
+The tutorial of framework valmine.js
