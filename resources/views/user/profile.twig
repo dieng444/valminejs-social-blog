@@ -1,0 +1,17 @@
+{% extends 'layout.twig'%}
+{%block title%}{{user.getFirstName}} {{user.getLastName}}{%endblock%}
+{%block login%}<a href="/logout" class="btn btn-primary">Logout</a> {%endblock%}
+{%block body%}
+  <section id="user-block-body">
+    <div class="col-lg-6 col-lg-offset-3">
+        <h3>Welcome to your profile page Mr. <b>{{user.getFirstName}} {{user.getLastName}}</b></h3>
+        <h3>your number is : <b>{{user.getId}}</b></h3>
+        <h3>and your email is : <b>{{user.getEmail}}</b></h3>
+    </div>
+    <div class="col-lg-6 col-lg-offset-4">
+			<a href="/account" class="btn btn-success">Edit your profile</a>
+			<a href="/delete/{{user.getId}}" class="btn btn-danger">Delete your profile</a>
+		</div>
+
+  </section>
+{%endblock%}

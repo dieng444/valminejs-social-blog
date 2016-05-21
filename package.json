@@ -1,0 +1,14 @@
+{
+  "name": "Valmine.js",
+  "author": "Macky Dieng <http://mackydieng.fr> - <github.com/dieng444>",
+  "description": "Framework MVC for node.js",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "~1.10.1",
+    "cookie-session": "~1.1.0",
+    "express": "~4.11.0",
+    "mongodb": "^2.1.7",
+    "twig": "^0.8.8",
+    "util": "^0.10.3"
+  }
+}

@@ -1,0 +1,29 @@
+{% extends 'layout.twig'%}
+{%block title%}{{user.getFirstName}} {{user.getLastName}}{%endblock%}
+{%block login%}Logout {%endblock%}
+{%block body%}
+  <section class="row">
+  	<div class="col-lg-6 col-lg-offset-3">
+  		<h3>You are on the point to update your profile</h3>
+  		<form action="/update" method="post">
+  			<fieldset class="form-group">
+  				<label for="lastName">Last name</label><br>
+  				<input type="text" name="lastName" id="lastName" class="form-control" value="{{user.getLastName}}"/>
+  			</fieldset>
+  			<fieldset class="form-group">
+  				<label for="firstName">First name</label><br>
+  				<input type="text" name="firstName" id="firstName" class="form-control" value="{{user.getFirstName}}"/>
+  			</fieldset>
+  			<fieldset class="form-group">
+  				<label for="email">E-mail</label><br>
+  				<input type="text" name="email" id="email" class="form-control" value="{{user.getEmail}}"/>
+  			</fieldset>
+  			<fieldset class="form-group">
+  				<label for="password">Password</label><br>
+  				<input type="password" name="password" id="password" class="form-control" value="{{user.getPassword}}"/>
+  			</fieldset>
+  			<input type="submit" id="submit-btn" class="col-lg-3 btn btn-success" value="Submit"/>
+  		</form>
+  	</div>
+  </section>
+{%endblock%}

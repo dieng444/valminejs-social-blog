@@ -1,1 +1,2 @@
-# valminejs-social-blog
+# valmine.js
+Framewok MVC for node.js

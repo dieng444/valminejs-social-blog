@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html>
+  	<head>
+  		<meta charset="UTF-8">
+      <title>{%block title%}My Social blog{%endblock%}</title>
+  		<link href="/vendor/bootstrap/css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+      {%block css%}
+
+      {%endblock%}
+  	</head>
+  	<body>
+  		<div class="container">
+  			<header class="row">
+  				<h1 class="col-lg-3 col-lg-offset-3">My Social blog</h1>
+  				<h2 class="col-lg-3 col-lg-offset-2">
+						<a href="/register" class="btn btn-default">Signup</a>
+						{%block login%}<a href="/login" class="btn btn-primary">Login</a> {%endblock%}
+					</h2>
+  			</header>
+  			{%block body%}
+
+  	    {%endblock%}
+  		</div>
+      {%block js%}
+
+      {%endblock%}
+    </body>
+  </html>

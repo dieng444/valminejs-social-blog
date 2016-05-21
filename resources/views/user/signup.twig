@@ -1,0 +1,27 @@
+{% extends 'layout.twig' %}
+{%block body%}
+<section class="row">
+	<div class="col-lg-6 col-lg-offset-3">
+		<h3>You are on the point to create a new account</h3>
+		<form action="/register" method="post" id="signup-form">
+			<fieldset class="form-group">
+				<label for="lastName">Last name</label><br>
+				<input type="text" name="lastName" id="lastName" class="form-control" placeholder="Your last name"/>
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="firstName">First name</label><br>
+				<input type="text" name="firstName" id="firstName" class="form-control" placeholder="Your first name"/>
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="email">E-mail</label><br>
+				<input type="text" name="email" id="email" class="form-control" placeholder="Your email"/>
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="pwd">Password</label><br>
+				<input type="password" name="password" id="password" class="form-control" placeholder="Your password"/>
+			</fieldset>
+			<input type="submit" id="submit-btn" class="col-lg-3 btn btn-success" value="Submit"/>
+		</form>
+	</div>
+</section>
+{%endblock%}
